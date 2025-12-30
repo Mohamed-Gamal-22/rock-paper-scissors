@@ -5,3 +5,47 @@
 .item {
   cursor: pointer;
 }
+
+.bg-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -5;
+  background-color: #ff5f6d;
+  animation-name: leftSide;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+.bg-right {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -5;
+  background-color: #ffc371;
+  animation-name: rightSide;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes leftSide {
+  0% {width: 0%;}
+  20% {width: 50%;}
+  45%{width: 45%;}
+  60%{width: 50%;}
+  80%{width: 48%;}
+  100% {width: 50%;}
+}
+@keyframes rightSide {
+  0% {width: 0%;}
+  20% {width: 50%;}
+  45%{width: 45%;}
+  60%{width: 50%;}
+  80%{width: 48%;}
+  100% {width: 50%;}
+}
